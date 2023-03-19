@@ -1,0 +1,7 @@
+.container{
+    $max-width: 1500px;
+    $padding: 1rem;
+    width: min($max-width, 100% - $padding);
+    margin-inline: auto;
+}
+

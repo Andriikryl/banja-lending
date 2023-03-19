@@ -1,0 +1,47 @@
+.header{
+    padding-block: 30px;
+    border-bottom: 1px solid #E0E2FC;;
+}
+
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 48px;
+}
+
+.toolbar{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    .toolbar__list{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .toolbar__list__item{
+            padding: 12px;
+            border: 1px solid #D1D2E7;
+            border-radius: 12px;
+        }
+    }
+    .toolbar__btn{
+        padding: 15px 25px;
+        font-family: 'ITC Avant Garde Gothic Std';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #525BC6;
+        border: 1px solid #6670EE;
+        box-shadow: 0px 12px 19px rgba(93, 110, 171, 0.12);
+        border-radius: 12px;
+        background-color: transparent;
+    }
+}
