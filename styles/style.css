@@ -10,6 +10,11 @@ html, body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 li {
   list-style: none;
 }
@@ -58,6 +63,15 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 48px;
 }
+.nav__list .list__link {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #181C50;
+}
 
 .toolbar {
   display: flex;
@@ -87,4 +101,130 @@ p, h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 12px 19px rgba(93, 110, 171, 0.12);
   border-radius: 12px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.hero__box {
+  -webkit-padding-before: 70px;
+          padding-block-start: 70px;
+  -webkit-padding-after: 150px;
+          padding-block-end: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__box .hero__info {
+  max-width: 610px;
+}
+
+.hero__title {
+  font-family: "Hepta Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+}
+.hero__title span {
+  font-family: "Hepta Slab";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+}
+
+.hero__text {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3F415C;
+  -webkit-padding-after: 100px;
+          padding-block-end: 100px;
+}
+
+.hero__btn-us {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 21px 41px;
+  background: #6670EE;
+  border: 2px solid #6670EE;
+  box-shadow: 0px 12px 30px rgba(14, 68, 152, 0.15);
+  border-radius: 12px;
+  -webkit-margin-end: 50px;
+          margin-inline-end: 50px;
+  position: relative;
+}
+.hero__btn-us::after {
+  content: "";
+  display: block;
+  background-color: hsl(237, 31%, 86%);
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: -35px;
+}
+
+.hero__box-btn {
+  display: flex;
+  align-items: center;
+}
+
+.hero__btn-watch {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1A1A29;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.hero__btn-watch::before {
+  content: "";
+  display: block;
+  background-image: url(/images/hero/Group.svg);
+  width: 44px;
+  height: 29px;
+}
+
+.hero__img {
+  max-width: 553px;
+  position: relative;
+}
+.hero__img::before {
+  content: "";
+  display: block;
+  border: 1px solid #D1D2E7;
+  border-radius: 30px;
+  width: 197px;
+  height: 197px;
+  position: absolute;
+  left: -70px;
+  top: -50px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.hero__img::after {
+  content: "";
+  display: block;
+  background-image: url(/images/hero/heroimgfone.png);
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  bottom: -200px;
+  left: -130px;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
